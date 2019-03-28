@@ -1,19 +1,12 @@
-function typeOut (data){
-	var typeData;
-	var type = typeof(data);
-	if (type === 'number') {
-		typeData = 'number';
-	} 
-	else {
-		if (type === 'string'){
-			typeData = 'string';
-		} 
-		else {
-			typeData = undefined;
-		}
+function typeOut(data) {
+	switch (typeof data) {
+		case 'string': return 'string';
+		case 'number':
+			if (isNaN(data)) {
+				break;
+			} else return 'number';
+		default: return undefined;	
 	}
-	return typeData;
+	return undefined;
 }
-
-
-module.exports = typeOut
+module.exports = typeOut 

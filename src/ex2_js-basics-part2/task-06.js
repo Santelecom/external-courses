@@ -1,8 +1,6 @@
 function simpleNumber(data){
 	if ((typeof data === 'number') && (data >=2) && (data <= 1000) ){
-		var deliver, deliverCount, result;
-		deliver = 2;
-		deliverCount = 1;
+		var deliver =2, deliverCount =1, result;
 		for (deliver; deliver < data; deliver++){
 			if ((deliver !== data) && (data % deliver === 0) ){
 				deliverCount++;
@@ -14,8 +12,6 @@ function simpleNumber(data){
 		else {
 			result = 'Число ' + data + ' - составное число';
 		}
-
-
 	}
 	else {
 		result = 'Данные неверны';
