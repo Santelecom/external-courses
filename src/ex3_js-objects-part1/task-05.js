@@ -1,11 +1,11 @@
 
 
-function copyObj(objData){
+function copyObj(objData) {
 	var objDataCpoy = {};
-	for (var key in objData){
-		if (typeof objData ==='object'){	
+	for (var key in objData) {
+		if (objData.hasOwnProperty(key)) {
 			objDataCpoy[key] = objData[key];
-		}	
+		}
 	}
 
 

@@ -1,12 +1,11 @@
 
-function findKey(strData, objData){
-	var inObj = false;
-	for (var key in objData){
-		if (key === strData){
-			inObj = true;
+function findKey(strData, objData) {
+	for (var key in objData) {
+		if (key === strData) {
+			return true;
 		}
 	}
-	return inObj;
+	return false;
 }
 
 module.exports = findKey
