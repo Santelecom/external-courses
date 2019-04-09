@@ -1,5 +1,3 @@
-
-
 function copyObj(objData) {
 	var objDataCpoy = {};
 	for (var key in objData) {
@@ -7,8 +5,6 @@ function copyObj(objData) {
 			objDataCpoy[key] = objData[key];
 		}
 	}
-
-
 	return objDataCpoy;
 }
 

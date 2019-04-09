@@ -1,8 +1,5 @@
-
-
 function deepCopyObj(objData) {
 	var objDataCopy = {};
-
 	for (var key in objData) {
 		if (typeof objData[key] !== 'object') {
 			objDataCopy[key] = objData[key];
