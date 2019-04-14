@@ -1,0 +1,46 @@
+body {
+    background-color: #0e0e0e;
+}
+
+.box {
+    width: 311px;
+    height: 126px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decor {
+    position: relative;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid #8e8e8e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #555;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    background-color: #c7c7c7;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.25), 0 0 0 7px #cbcbcb, 0 0 0 9px #fff, 0 0 0 11px #666, inset 0 25px 0 0 rgba(255, 255, 255, 0.3);
+    padding: 15px 50px;
+}
+
+.decor:before {
+    position: absolute;
+    color: #888;
+    top: 5px;
+    left: 10px;
+    content: "★";
+    font-size: 33px;
+}
+
+.decor:after {
+    position: absolute;
+    color: #888;
+    top: 5px;
+    right: 10px;
+    content: "★";
+    font-size: 33px;
+}
