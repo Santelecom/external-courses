@@ -1,9 +1,6 @@
+function randomHundred() {
+    return Math.random() * 100;
 
-function randomHundred(){
-	var result;
-	result = Math.random() * 100;
-	return result
-	
 }
 
 module.exports = randomHundred

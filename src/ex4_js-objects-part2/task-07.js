@@ -1,20 +1,19 @@
-function cutString(srtData, numberData){
+function cutString(srtData, numberData) {
+    var newStr = srtData;
+    if (typeof srtData === 'string') {
+        var strLenght, arrStr;
+        strLenght = newStr.length;
+        if (strLenght > numberData) {
+            arrStr = srtData.split('');
 
-	if (typeof srtData === 'string'){		
-		var strLenght, newStr, arrStr
-		newStr = srtData;
-		strLenght = newStr.length;
-		if (strLenght > numberData){
-			arrStr = srtData.split('');
+            var newArr = arrStr.slice(0, numberData - 1);
+            newArr[numberData] = '…'
+            newStr = newArr.join('');
 
-			var newArr = arrStr.slice(0,numberData-1);
-			newArr[numberData] = '…'
-			newStr = newArr.join('');
+        }
 
-		}
-
-	}
-	return newStr;
+    }
+    return newStr;
 }
 
 module.exports = cutString

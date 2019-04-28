@@ -1,7 +1,5 @@
-function objNoProto(){
-	var objEmpty;
-	objEmpty = Object.create(null);
-	return objEmpty;
+function objNoProto() {
+    return Object.create(null);
 }
 
-module.exports = pusto
+module.exports = objNoProto
