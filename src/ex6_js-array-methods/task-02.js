@@ -5,6 +5,4 @@ function someTwin(array, callback) {
     return false;
 }
 
-
 module.exports = someTwin;
-

@@ -1,7 +1,5 @@
 function reduceTwin(array, callback, initialValue) {
-
     var previousValue, i;
-
     if (initialValue) {
         previousValue = initialValue;
         i = 0;
@@ -16,6 +14,5 @@ function reduceTwin(array, callback, initialValue) {
 
     return previousValue;
 }
-
 
 module.exports = reduceTwin;

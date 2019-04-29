@@ -5,5 +5,4 @@ function everyTwin(array, callback) {
     return true;
 }
 
-
 module.exports = everyTwin;
