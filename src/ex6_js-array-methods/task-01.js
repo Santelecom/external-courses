@@ -24,4 +24,5 @@ function sliceTwin(array, begin, end) {
     return newArr;
 }
 
+
 module.exports = sliceTwin;

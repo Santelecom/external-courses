@@ -5,4 +5,5 @@ function mapTwin(array, callback) {
     }
     return newArray;
 }
+
 module.exports = mapTwin;

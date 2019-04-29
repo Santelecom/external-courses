@@ -9,4 +9,5 @@ function filterTwin(array, callback) {
     }
     return newArray;
 }
+
 module.exports = filterTwin;

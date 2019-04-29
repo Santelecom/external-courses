@@ -15,4 +15,5 @@ function reduceTwin(array, callback, initialValue) {
     return previousValue;
 }
 
+
 module.exports = reduceTwin;
