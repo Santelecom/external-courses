@@ -27,17 +27,14 @@
             25% {
                 left: 100px;
                 background-color: red;
-                /* width: 100px; */
             }
             50% {
                 left: 200px;
                 background-color: #aaa;
-                /* width: 50px; */
             }
             75% {
                 left: 100px;
                 background-color: red;
-                /* width: 100px; */
             }
             100% {
                 left: 0;
