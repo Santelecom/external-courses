@@ -1,0 +1,9 @@
+.round {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mask {
+    -webkit-mask-image: url(logo.png);
+    -webkit-mask-size: 300px;
+}

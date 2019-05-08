@@ -1,0 +1,146 @@
+        .loader {
+            margin: 0 auto;
+            width: 250px;
+            height: 50px;
+            border: 1px #ddd solid;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+        }
+        
+        .box {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #aaa;
+            animation: loader;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
+        
+        @keyframes loader {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: 100px;
+                background-color: red;
+                /* width: 100px; */
+            }
+            50% {
+                left: 200px;
+                background-color: #aaa;
+                /* width: 50px; */
+            }
+            75% {
+                left: 100px;
+                background-color: red;
+                /* width: 100px; */
+            }
+            100% {
+                left: 0;
+                background-color: #aaa;
+            }
+        }
+        
+        .block {
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            border: #000 5px solid;
+            border-top: none;
+            position: relative;
+        }
+        
+        .ball-wall {
+            width: 50px;
+            height: 50px;
+            bottom: 0;
+            position: absolute;
+            animation-name: wall;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes wall {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 250px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: jump;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes jump {
+            0% {
+                bottom: 120px;
+                animation-timing-function: ease-in;
+            }
+            25% {
+                bottom: 0px;
+            }
+            50% {
+                bottom: 120px;
+                animation-timing-function: ease-in;
+            }
+            75% {
+                bottom: 0px;
+            }
+            100% {
+                bottom: 120px;
+            }
+        }
+        
+        .animate-box {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to top, #ff0011, #66ff00);
+            animation-name: amitatebox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes amitatebox {
+            0% {
+                border-radius: 50%;
+            }
+            15% {
+                border-radius: 0;
+            }
+            30% {
+                background: linear-gradient(to bottom, #ff0011, #66ff00);
+            }
+            45% {
+                width: 150px;
+                height: 150px;
+                transform: scale(1.2, 0.5);
+            }
+            60% {
+                transform: rotate(360deg);
+            }
+            75% {
+                background: linear-gradient(to bottom, #001aff, #00ffff);
+            }
+            100% {
+                border-radius: 50%;
+            }
+        }
