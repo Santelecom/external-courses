@@ -1,0 +1,49 @@
+div {
+    width: 150px;
+    height: 100px;
+    background: #999;
+}
+
+.first {
+    border: 5px solid #000;
+}
+
+.second {
+    outline: 5px solid #000;
+}
+
+.third {
+    box-shadow: 0 0 0 5px #000;
+}
+
+.fourth {
+    position: relative;
+}
+
+.fourth::after {
+    background-color: #000;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.fifth {
+    position: relative;
+}
+
+.fifth::before {
+    background-color: #000;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
