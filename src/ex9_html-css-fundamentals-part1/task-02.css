@@ -1,0 +1,73 @@
+.first-method,
+.second-method,
+.three-method {
+    position: relative;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.f-one,
+.f-two,
+.f-three {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+}
+
+.f-one {
+    background-color: #BFE3D1;
+    top: 40px;
+    left: 40px;
+}
+
+.f-two {
+    background-color: #90CDAF;
+    top: 20px;
+    left: 20px;
+}
+
+.f-three {
+    background-color: #60B88D;
+}
+
+.s-one {
+    background-color: #60B88D;
+    width: 160px;
+    height: 160px;
+    box-shadow: 20px 20px 0 0 #90CDAF, 40px 40px 0 0 #BFE3D1;
+}
+
+.three-method {
+    position: relative;
+}
+
+.t-one {
+    position: absolute;
+    background-color: #BFE3D1;
+    top: 40px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+}
+
+.t-one::after {
+    content: "";
+    background-color: #60B88D;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -40px;
+    left: -40px;
+}
+
+.t-one::before {
+    content: "";
+    background-color: #90CDAF;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -20px;
+    left: -20px;
+}
