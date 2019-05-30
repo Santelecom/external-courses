@@ -1,0 +1,107 @@
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    .line {
+        position: absolute;
+    }
+    .top-header {
+        height: 97px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 155px;
+    }
+    .bottom-header {
+        height: 97px;
+    }
+    .slider,
+    .contacts {
+        display: none;
+    }
+    .main-bg {
+        background: url(./img/tablet-bg.png) no-repeat top center;
+    }
+    .about {
+        flex-direction: column;
+    }
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #fff;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    .search {
+        z-index: 20;
+    }
+    .bottom-header input:checked~ul {
+        transform: none;
+    }
+    nav {
+        display: block;
+        position: relative;
+        left: 20px;
+        z-index: 10;
+        user-select: none;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+        padding: 15px;
+    }
+    nav a:focus::after {
+        border-left: 7px solid #1faae2;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        left: 25px;
+    }
+    nav input {
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 20;
+    }
+    nav span {
+        display: block;
+        width: 60px;
+        height: 10px;
+        margin-bottom: 13px;
+        position: relative;
+        background: #1faae2;
+        z-index: 10;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    nav span:first-child {
+        transform-origin: 0% 0%;
+    }
+    nav span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    nav input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    nav input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    nav input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    nav input:checked~ul,
+    nav input:checked~#menu {
+        transform: none;
+    }
+}
