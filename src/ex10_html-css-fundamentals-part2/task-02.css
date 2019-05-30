@@ -1,0 +1,40 @@
+#table-customer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6B768C;
+    margin: 0 auto;
+    background-color: #F2F6FA;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    margin-top: 200px;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: #eaeaf3;
+    padding: 5px;
+    border: 2px solid #fff;
+    font-size: 12px;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #E8EDF4;
+}
+
+tr:hover {
+    background-color: #E2E5E9;
+}
+
+td {
+    padding: 18px;
+    border: 2px solid #fff;
+    font-size: 14px;
+}
+
+.money::before {
+    content: "$";
+    margin-right: 5px;
+}
+
+.customer {
+    text-transform: capitalize;
+}
