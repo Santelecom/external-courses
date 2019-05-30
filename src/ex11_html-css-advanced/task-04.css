@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "Proxima";
+    src: url("./fonts/proxima.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima-bold";
+    src: url("./fonts/proximabold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+    font-family: Proxima, Arial, sans-serif;
+    font-size: 12px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/* tables still need cellspacing="0" in the markup */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+
+/* RESET CSS */
+
+
+/* ======================== */
+
+.magenta {
+    color: #e64c66;
+    font-size: 9px;
+}
+
+.yellow {
+    color: #ffab00;
+    font-size: 9px;
+}
+
+.blue {
+    color: #00bfdd;
+    font-size: 9px;
+}
+
+.purple {
+    color: #7874cf;
+    font-size: 9px;
+}
+
+.flex {
+    display: flex;
+}
+
+.pad-0-15 {
+    padding: 0 15px;
+}
+
+header {
+    /* height: 60px; */
+    background-color: #2F364A;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header a {
+    color: #69738c;
+    padding: 10px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu li:nth-child(even)::before {
+    content: "\2022";
+    color: #1f2635;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #15a4fa;
+}
+
+.avatar img {
+    /* margin-right: 5px; */
+    border-radius: 50%;
+}
+
+.avatar span {
+    margin: 0 10px;
+}
+
+.main-box {
+    display: flex;
+}
+
+.header-compensator {
+    height: 60px;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background: #1F2637;
+    color: #6a6c70;
+    border-right: 1px solid #34373d;
+}
+
+.nav-border {
+    border-top: 1px #282f41 solid;
+    border-bottom: 4px #19202e solid;
+    font-size: 13px;
+}
+
+.filter-btn {
+    padding: 30px 20px;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f2795a;
+    padding: 18px;
+    border-radius: 2px;
+    border: none;
+    width: 160px;
+    cursor: pointer;
+}
+
+.nav-menu a {
+    color: #78829d;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-menu i {
+    margin-right: 15px;
+    width: 18px;
+    text-align: center;
+}
+
+
+/* 
+.nav-menu a span {
+    position: absolute;
+    margin-left: 40px;
+} */
+
+.nav-info {
+    color: #4f5a6f;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.nav-info i {
+    margin-right: 15px;
+}
+
+.nav-info a {
+    color: #677b92;
+}
+
+
+/* 
+.wrap-info-box {
+    position: absolute;
+    margin-left: 40px;
+} */
+
+.nav-info-time {
+    padding: 15px 0;
+}
+
+.content-wraper {
+    background-color: #fff;
+    width: calc(100% - 200px);
+    min-height: calc(100vh - 97px);
+}
+
+.title {
+    padding: 30px 15px;
+    background-color: #EEF1F7;
+    font-size: 1.5rem;
+}
+
+.content-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #EEF1F7;
+    border-top: 1px solid #dadfea;
+    border-bottom: 1px solid #dadfea;
+}
+
+.filters-horisont {
+    display: flex;
+}
+
+.filters-horisont a {
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+
+.filters-horisont a:active,
+.filters-horisont a:focus {
+    background-color: #97b3ce;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.search-wraper {
+    position: relative;
+}
+
+.search-wraper button {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    background: rgba(0, 0, 0, 0);
+    color: #8c97b2;
+    border: none;
+    cursor: pointer;
+}
+
+.content-filters input {
+    border: 1px solid #c7cddb;
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 15px;
+    width: 400px;
+}
+
+.footer {
+    background-color: #181e2c;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    padding: 15px;
+    display: block;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-i-dark {
+    background-color: #1f2637;
+}
+
+.footer-i-blue {
+    background-color: #15a4fa;
+}
