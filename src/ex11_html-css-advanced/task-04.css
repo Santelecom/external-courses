@@ -243,6 +243,7 @@ header a {
     border-radius: 2px;
     border: none;
     width: 160px;
+    cursor: pointer;
 }
 
 .nav-menu a {
@@ -351,12 +352,12 @@ header a {
     width: 400px;
 }
 
-footer {
+.footer {
     background-color: #181e2c;
     color: #fff;
 }
 
-footer a {
+.footer a {
     color: #fff;
     padding: 15px;
     display: block;
